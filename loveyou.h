@@ -1,7 +1,10 @@
+/*
+Coded By : Djawad-Hammadi
+Github : Djawad-Hammadi
+Date : 15/01/2022
+Let's Start This Shit
+*/
 #pragma once
-
-// Code below is adapted from @modexpblog. Read linked article for more details.
-// https://www.mdsec.co.uk/2020/12/bypassing-user-mode-hooks-and-direct-invocation-of-system-calls-for-red-teams
 
 #ifndef SW2_HEADER_H_
 #define SW2_HEADER_H_
