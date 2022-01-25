@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+# Coded By Djawad Hammadi
+# Gtihub : Djawad-Hammadi
+# Date : 20/01/2022
+# Let's Start This Shit
 import sys, os, argparse, random, string
 stub = """
 #include <iostream>
