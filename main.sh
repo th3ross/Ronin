@@ -44,7 +44,7 @@ printf ""
 else 
 printf "\n\033[0;32m[#]\033[1;37m mingw32 Not Found In Your System (;\n\n"
 printf "\033[1;33mInstalling It :\n"
-sudo apt-get install g++ -y 
+sudo apt-get install g++-mingw-w64 -y 
 printf "\n\033[0;32mDone..\n\n"
 fi
 sleep 5 
